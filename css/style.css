@@ -1,0 +1,22 @@
+body {
+}
+.rainbov {
+    background-color: red;
+    position: relative;
+    margin: 100px auto;
+    width: 100px;
+    height: 100px;
+    animation: floating 4000ms ease infinite;
+}
+@keyframes floating {
+    0%{top: 0px;}
+    25%{transform: translateY(150px); background-color: blue;}
+    50%{transform: translate(150px,150px); background-color: green;}
+    75%{transform: translate(150px,-0px); background-color: yellow;}
+    100%{transform: translate(0px,0px);}
+    /* 0%{transform: translateY(0px);}
+    25%{transform: translateY(150px);}
+    50%{transform: translateX(150px);}
+    50%{transform: translateX(-150px);}
+    100%{transform: translateY(0px);} */
+}
